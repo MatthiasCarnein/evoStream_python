@@ -35,7 +35,7 @@ Once installed, the interfaces are the same as in the C++ and R implementations:
 ```Python
 import evoStream
 
-evo = evoStream.EvoStream(0.05, 0.001, 100, 4, .8, .001, 100, 2*4, 250) ## init
+evo = evoStream.EvoStream(0.05, 0.001, 100, 4, .8, .001, 100, 2*4, 1000) ## init
 evo.cluster([10.0, 20.0, 30.0]) ## read observation
 evo.get_microweights()
 evo.get_microclusters()
@@ -49,7 +49,7 @@ evo.microToMacro()
 ## Full Example: Read CSV file (here: comma-separated, numeric values)
 import csv
 
-evo = evoStream.EvoStream(0.05, 0.001, 100, 4, .8, .001, 100, 2*4, 250);
+evo = evoStream.EvoStream(0.05, 0.001, 100, 4, .8, .001, 100, 2*4, 1000);
 
 with open('data.csv', 'r') as csvfile:
     reader = csv.reader(csvfile, delimiter=',', quoting=csv.QUOTE_NONNUMERIC)
@@ -66,7 +66,7 @@ print("\nMicro Weights:")
 x = evo.get_microweights()
 print(x)
 
-print("\nMacro Clusters (here: performs an additional 250 reclustering steps, see parameter)")
+print("\nMacro Clusters (here: performs an additional 1000 reclustering steps, see parameter)")
 x = evo.get_macroclusters()
 print(x)
 

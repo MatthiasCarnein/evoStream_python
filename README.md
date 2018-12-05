@@ -3,7 +3,7 @@
 
 This is the implementation of an evolutionary stream clustering algorithm as proposed in our article in the Journal of Big Data Research.
 
-> Carnein M. and Trautmann H. (2018), "evoStream - Evolutionary Stream Clustering Utilizing Idle Times", Big Data Research. 
+> Carnein M. and Trautmann H. (2018), "evoStream - Evolutionary Stream Clustering Utilizing Idle Times", Big Data Research., May, 2018. Vol. 14, pp. 101 - 111. 
 
 The online component uses a simplified version of `DBSTREAM` to generate micro-clusters.
 The micro-clusters are then incrementally reclustered using an evloutionary algorithm.
